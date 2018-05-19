@@ -3,7 +3,55 @@
 </p> <br>
 
 # benOS Local File System (LFS)
+TODO: Description
 
+## benFS Definitions & Namespaces
+
+`BenHeader` - benFS Header and also the entry point into the benOS microkernel filesystem.
+`benfs_signature` - 8-byte signature via a scanned data block, from within the benOS filesystem.
+`benfs_version` - benFS version.
+`benfs_uuid` - benFS disk identifier.
+`benfs_size` - benFS disk size.
+`benfs_root` - benFS root block pointer.
+`benfs_free` - benFS free block pointer.
+
+## benFS Design Structures
+
+### BenHeader
+benOS's filesystem (`benFS`) uses the `BenHeader` struct/implementation as an entry point into the benOS microkernel FS. As a design example, if a benOS user wanted to mount a disk or an image to benFS, the filesystem is designed to scan for a block that contains an 8-byte signature, otherwise known as a `ben_signature`. When mounting a disk/image, the scan is the first function that executes, when trying to mount the disk/image. The 8-byte `ben_signature` must be found in the first MB. 
+
+```rust
+"benFS\0"
+```
+
+`BenHeader` has a very simple structure, including `ben_version` (benFS Version), `benx-uuid` (benFS Disk Identifier), `benfs_size` (benFS Disk Size), `benfs_root`(benFS Root Block Pointer) and `benfs_free` (benFS Free Block Pointer)
+
+```rust
+#[repr(packed)]
+pub struct BenHeader {
+    pub benfs_signature: [u8; 8],
+    pub benfs_version: u64,
+    pub benfs_uuid: [u8; 16],
+    pub benfs_size: u64,
+    pub benfs_root: u64,
+    pub benfs_free: u64,
+}
+```
+
+The `benfs_root` and `benfs_free`, point to BenX that identifies `name`, `ben_mode`, `next`, `extents`. An example of the BenX node structure is below: 
+
+
+### BenX Node
+
+```rust
+#[repr(packed)]
+pub struct BenX {
+    pub name: [u8; 256],
+    pub ben_mode: u64,
+    pub next: u64,
+    pub extents: [Extent; 15],
+}
+```
 
 ## CREDITS AND ATTRIBUTES
 This portion of benOS may use software from other open source libraries. For a full list of software credits and acknowledgements, please visit [https://github.com/benchlab/benOS/blob/master/ATTRIBUTES.md](https://github.com/benchlab/benOS/blob/master/ATTRIBUTES.md).
