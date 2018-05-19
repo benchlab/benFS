@@ -3,7 +3,7 @@ use std::ops::{Deref, DerefMut};
 
 use benfs_uuid::BenFS_Uuid;
 
-use {X_BLOCK_SIZE, BEN_SIGNATURE, BEN_VERSION};
+use {X_BLOCK_SIZE, BENFS_SIGNATURE, BENFS_VERSION};
 
 /// BenHeader is the `header` for the benFS local file system
 #[repr(packed)]
