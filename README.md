@@ -7,13 +7,13 @@ TODO: Description
 
 ## benFS Definitions & Namespaces
 
-`BenHeader` - benFS Header and also the entry point into the benOS microkernel filesystem.
-`benfs_signature` - 8-byte signature via a scanned data block, from within the benOS filesystem.
-`benfs_version` - benFS version.
-`benfs_uuid` - benFS disk identifier.
-`benfs_size` - benFS disk size.
-`benfs_root` - benFS root block pointer.
-`benfs_free` - benFS free block pointer.
+`BenHeader` - benFS Header and also the entry point into the benOS microkernel filesystem. <br>
+`benfs_signature` - 8-byte signature via a scanned data block, from within the benOS filesystem. <br>
+`benfs_version` - benFS version. <br>
+`benfs_uuid` - benFS disk identifier. <br>
+`benfs_size` - benFS disk size. <br>
+`benfs_root` - benFS root block pointer. <br>
+`benfs_free` - benFS free block pointer. <br>
 
 ## benFS Design Structures
 
