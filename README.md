@@ -2,7 +2,7 @@
   <img src="https://github.com/benchlab/benchx-media/raw/master/benos-logo.png" width="300px" alt="benOS Logo"/>
 </p> <br>
 
-[![](https://img.shields.io/badge/made%20by-BenchLabs-blue.svg?style=flat-square)](https://labs.benchx.io)
+[![](https://img.shields.io/badge/made%20with%20love%20by-BenchLabs-purple.svg?style=flat-square)](https://labs.benchx.io)
 
 # benFS
 The distributed, decentralized and peer-to-peer file system that forms the foundation of the [Bench Operating System](https://os.benchx.io)
