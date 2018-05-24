@@ -2,8 +2,12 @@
   <img src="https://github.com/benchlab/benchx-media/raw/master/benos-logo.png" width="300px" alt="benOS Logo"/>
 </p> <br>
 
-# benOS Local File System (LFS)
-benOS Local File System Library (benFS) https://os.benchx.io
+[![](https://img.shields.io/badge/made%20by-BenchLabs-blue.svg?style=flat-square)](https://labs.benchx.io)
+
+# benFS
+The distributed, decentralized and peer-to-peer file system that forms the foundation of the [Bench Operating System](https://os.benchx.io)
+
+
 
 # What Is benOS
 [benOS](https://github.com/benchlab/benos) is a decentralized operating system, originally based on Linux, uses some design strategies from [RedoxOS](https://github.com/redox-os) and even some design concepts from [OpenStack](https://github.com/openstack), [Ethereum](https://github.com/ethereum/go-ethereum) and [EOS](https://github.com/eosio). Although we utilize some of their design strategies, benOS is completely custom from a codebase perspective. 
