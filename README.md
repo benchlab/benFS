@@ -3,11 +3,12 @@
 </p> <br>
 
 [![](https://img.shields.io/badge/made%20with%20love%20by-BenchLabs-purple.svg?style=flat-square)](https://labs.benchx.io)
+[![](https://img.shields.io/badge/benOS-Library-benFS-purple.svg?style=flat-square)](https://benfs.benchx.io)
+[![](https://img.shields.io/badge/benOS-Version-v.1.0.7-blue.svg?style=flat-square)](https://os.benchx.io/mercury/v/1-0-7)
+[![benchmark-compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
 # benFS
 The distributed, decentralized and peer-to-peer file system that forms the foundation of the [Bench Operating System](https://os.benchx.io)
-
-
 
 # What Is benOS
 [benOS](https://github.com/benchlab/benos) is a decentralized operating system, originally based on Linux, uses some design strategies from [RedoxOS](https://github.com/redox-os) and even some design concepts from [OpenStack](https://github.com/openstack), [Ethereum](https://github.com/ethereum/go-ethereum) and [EOS](https://github.com/eosio). Although we utilize some of their design strategies, benOS is completely custom from a codebase perspective. 
